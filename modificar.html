@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar PQ</title>
+    <link rel="stylesheet" href="./css/altas.css">
+</head>
+<body>
+    
+    <!-- multistep form -->
+    <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+            <li class="active">Sección general</li>
+            <li>Sección I</li>
+            <li>Sección II</li>
+            <li>Sección III</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Sección general</h2>
+            <h3 class="fs-subtitle">(PARA SER LLENADO POR EL PROCESO PT-08 USOAP)</h3>
+            <input type="text" name="numpq" placeholder="Número de PQ" />
+            <input type="text" name="area" placeholder="Área de auditoría" />
+            <input type="text" name="elemento" placeholder="Elemento crítico" />
+            <input type="button" name="next" class="next action-button" value="Siguiente" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Sección I</h2>
+            <h3 class="fs-subtitle">DESCRIPCIÓN DE LA PQ Y LOS REQUISITOS DE SOLVENTACIÓN (PARA SER LLENADO POR EL PROCESO PT-08 USOAP)</h3>
+            <h>Pregunta de prótocolo</h>
+            <input type="text" name="pregunta" placeholder="Pregunta de protocolo" /> <!--Deberá jalar la pregunta de la BD-->
+            <h>Orientación para el examen de pruebas:</h>
+            <input type="text" name="orientación" placeholder="Orientación para el examen de pruebas" /> <!--Deberá jalar los incisos dependiendo el área de la BD-->
+            <h>Documentos de referencia:</h>
+            <input type="text" name="documentos" placeholder="Documentos de referencia" /> <!--Deberá jalar los documentos de la BD-->
+            <input type="button" name="previous" class="previous action-button" value="Anterior" />
+            <input type="button" name="next" class="next action-button" value="Siguiente" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+        </form>
+        
+</body>
+</html>
